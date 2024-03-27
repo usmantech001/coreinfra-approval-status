@@ -1,6 +1,7 @@
 import 'package:coreinfra_project/features/screens/awaiting_approval.dart';
 import 'package:coreinfra_project/utils/constants/colors.dart';
 import 'package:coreinfra_project/utils/constants/text_string.dart';
+import 'package:coreinfra_project/utils/helpers.dart';
 import 'package:coreinfra_project/utils/widgets/custom_search.dart';
 import 'package:coreinfra_project/utils/widgets/list_tile.dart';
 import 'package:coreinfra_project/utils/widgets/text.dart';
@@ -103,28 +104,3 @@ class _StatusScreenState extends State<StatusScreen>
   }
 }
 
-TextStyle changeTabTextStyle(int tabTextIndex, int tabIndex) {
-  if (tabIndex == tabTextIndex) {
-    return TextStyle(
-        color: AppColors.homeBlackColor,
-        fontWeight: FontWeight.w700,
-        fontSize: 14.sp);
-  }
-  return TextStyle(
-      color: AppColors.homeBlackColor,
-      fontWeight: FontWeight.w300,
-      fontSize: 14.sp);
-}
-
-Color changeTabIndicatorColor(int index) {
-  switch (index) {
-    case 0:
-      return AppColors.approvedIndicatorColor;
-    case 1:
-      return AppColors.pendingIndicatorColor;
-    case 2:
-      return AppColors.mainColor;
-    default:
-      return AppColors.approvedIndicatorColor;
-  }
-}
