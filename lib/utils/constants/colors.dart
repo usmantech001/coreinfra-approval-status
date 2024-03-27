@@ -28,4 +28,5 @@ class AppColors{
   static const Color calenderIconColor = Color(0xFF344054);
   static const Color awaitingApprovalDateColor = Color(0xFF6B7280);
   static const Color awaitingApprovalgreyColor = Color(0xFF8F8F8F);
+  static const Color searchTextColor = Color(0xFF667085);
 }

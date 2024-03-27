@@ -5,4 +5,6 @@ class ImageStringConstant{
   static const String createCustomer= 'assets/images/create_customer.png';
   static const String pending= 'assets/images/pending.png';
   static const String cancel = 'assets/images/cancel.png';
+  static const String approval = 'assets/images/approval.png';
+  static const String search = 'assets/images/search.png';
 }

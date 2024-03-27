@@ -1,4 +1,3 @@
-import 'package:coreinfra_project/features/screens/status.dart';
 import 'package:coreinfra_project/utils/constants/colors.dart';
 import 'package:coreinfra_project/utils/constants/image_string.dart';
 import 'package:coreinfra_project/utils/constants/text_string.dart';

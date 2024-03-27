@@ -1,6 +1,7 @@
 import 'package:coreinfra_project/features/screens/status.dart';
 import 'package:coreinfra_project/utils/constants/colors.dart';
 import 'package:coreinfra_project/utils/constants/image_string.dart';
+import 'package:coreinfra_project/utils/constants/text_string.dart';
 import 'package:coreinfra_project/utils/widgets/custom_icon.dart';
 import 'package:coreinfra_project/utils/widgets/dashboard_container.dart';
 import 'package:coreinfra_project/utils/widgets/list_tile.dart';
@@ -22,7 +23,7 @@ class DashboardScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             boldText(
-              text: 'Field Agent',
+              text: TextStringConstant.fieldAgent,
             ),
             Row(
               children: [
@@ -48,6 +49,7 @@ class DashboardScreen extends StatelessWidget {
             children: [
               Wrap(
                 children: [
+                 
                   dashboardContainer(
                       imagePath: ImageStringConstant.cashDeposit,
                       firstText: 'Cash',
@@ -70,15 +72,15 @@ class DashboardScreen extends StatelessWidget {
                       secondText: 'Profile',
                       backgroundColor: const Color(0xFF6D5FFE).withOpacity(0.1), onTap: () {  }),
                   dashboardContainer(
-                      imagePath: ImageStringConstant.chart,
-                      firstText: 'Approval',
-                      secondText: 'Status',
-                      backgroundColor:const Color(0xFFC30A3B).withOpacity(0.1), onTap: () { 
+                      imagePath: ImageStringConstant.approval,
+                      firstText: TextStringConstant.approval,
+                      secondText: TextStringConstant.status,
+                      backgroundColor:const Color(0xFFDA36CA).withOpacity(0.1), onTap: () { 
                         Navigator.push(context, MaterialPageRoute(builder: (context)=> const StatusScreen()));
                        }),
                 ],
               ),
-              
+            
               SizedBox(
                 height: 20.h,
               ),
@@ -86,7 +88,7 @@ class DashboardScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   boldText(
-                      text: 'Transactions',
+                      text: TextStringConstant.transactions,
                       textColor: AppColors.boldText1,
                       fontSize: 18),
                   Container(
@@ -95,7 +97,7 @@ class DashboardScreen extends StatelessWidget {
                     decoration: BoxDecoration(
                         border: Border.all(color: AppColors.buttonBorderColor),
                         borderRadius: BorderRadius.circular(15.sp)),
-                    child: smallText(text: 'see all'),
+                    child: smallText(text: TextStringConstant.seeAll),
                   )
                 ],
               ),

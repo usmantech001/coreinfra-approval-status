@@ -10,7 +10,7 @@ Widget appBarIcon({
     backgroundColor: AppColors.appBarbackgroundIconColor,
     child: Icon(
       icon,
-      size: 18,
+      size: 18.sp,
       color: AppColors.appBarIconColor,
     ),
   );
