@@ -11,7 +11,7 @@ Widget dashboardContainer({
   required VoidCallback onTap,
 }) {
   return Padding(
-    padding: EdgeInsets.only(right: 15.w, top: 20.h),
+    padding: EdgeInsets.only(right: 15.85.w, top: 20.h),
     child: Column(
       children: [
         customIcon(

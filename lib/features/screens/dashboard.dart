@@ -17,7 +17,8 @@ class DashboardScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         scrolledUnderElevation: 0,
-        toolbarHeight: 80.h,
+      //  toolbarHeight: 60.h,
+        
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -38,6 +39,7 @@ class DashboardScreen extends StatelessWidget {
         ),
       ),
       body: SingleChildScrollView(
+        padding: EdgeInsets.zero,
         physics: const BouncingScrollPhysics(),
         child: Padding(
           padding: EdgeInsets.only(

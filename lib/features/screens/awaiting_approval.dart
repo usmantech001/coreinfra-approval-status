@@ -37,7 +37,7 @@ class AwaitingApprovalScreen extends StatelessWidget {
         ),
         body: Padding(
           padding:
-              EdgeInsets.only(left: 30.w, right: 40.w, top: 20.h, bottom: 50.h),
+              EdgeInsets.only(left: 30.w, right: 30.w, top: 20.h, bottom: 50.h),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -62,7 +62,7 @@ class AwaitingApprovalScreen extends StatelessWidget {
                   fontSize: 12.sp,
                   textColor: AppColors.awaitingApprovalDateColor),
               Padding(
-                padding: EdgeInsets.only(top: 14.h, bottom: 12.h),
+                padding: EdgeInsets.only(top: 14.h, bottom: 14.h),
                 child: boldText(text: TextStringConstant.depositDetails, fontSize: 12.sp),
               ),
               awaitingApprovalRowContainer(
